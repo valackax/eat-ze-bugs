@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int d = 1352;
+    int S, D;
+    
+    int a = d / 1000;
+    int b = (d / 100) % 10;
+    int c = (d / 10) % 10;
+    int e = d % 10;
+
+    S = a + b + c + e;
+    D = a * b * c * e;
+
+    printf("Вхідні дані: d = %d\n", d);
+    printf("Вихідні дані: S = %d, D = %d\n", S, D);
+
+    return 0;
+}
