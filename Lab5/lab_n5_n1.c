@@ -4,8 +4,6 @@ int main() {
     int repeat;
 
     do {
-        // Оголошення констант та масивів
-        const int MAX_SIZE = 100; 
         
         double a[100];
         double c[100];
@@ -22,11 +20,10 @@ int main() {
             printf("Enter the number of elements (1 to 100): ");
             scanf("%d", &n);
             
-            // Використовуємо нашу константу MAX_SIZE для перевірки
-            if (n <= 0 || n > MAX_SIZE) {
+            if (n <= 0 || n > 100) {
                 printf("Error: Invalid array size.\n");
             }
-        } while (n <= 0 || n > MAX_SIZE);
+        } while (n <= 0 || n > 100);
 
         // Введення елементів початкового масиву з клавіатури
         printf("Enter %d real numbers:\n", n);
